@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class CodeChef
+     {
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int X = sc.nextInt();      // withdrawal amount
+        double Y = sc.nextDouble(); // initial balance
+
+        if (X % 5 == 0 && Y >= X + 0.50) {
+            Y = Y - (X + 0.50);
+        }
+
+        System.out.printf("%.2f\n", Y);
+        sc.close();
+    }
+}
