@@ -1,0 +1,4 @@
+SELECT user_id,name,email
+FROM Users
+where email LIKE '%.edu'
+ORDER BY user_id ASC;
