@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+ class DominantArmy {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int T = sc.nextInt(); // number of test cases
+
+        while (T-- > 0) {
+            int NA = sc.nextInt();
+            int NB = sc.nextInt();
+            int NC = sc.nextInt();
+
+            if (NA > NB + NC || NB > NA + NC || NC > NA + NB) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+        }
+
+        sc.close();
+    }
+}
