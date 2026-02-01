@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int T = sc.nextInt();   // number of test cases
+
+        while (T-- > 0) {
+            int X = sc.nextInt(); // gym cost
+            int Y = sc.nextInt(); // trainer cost
+            int Z = sc.nextInt(); // total budget
+
+            if (X + Y <= Z) {
+                System.out.println(2);
+            } else if (X <= Z) {
+                System.out.println(1);
+            } else {
+                System.out.println(0);
+            }
+        }
+
+        sc.close();
+    }
+}
